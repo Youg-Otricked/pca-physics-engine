@@ -11,3 +11,5 @@ Circle CreateCircle(float x, float y, float radius);
 void RenderCircle(Circle c);
 void MoveCircle(float x, float y, Circle* cir);
 void RotateCircle(float deg, Circle* rec);
+int CheckCollisionCircleCircle(Circle a, Circle b);
+void PreformCollisionCircleCircle(Circle* a, Circle* b);
