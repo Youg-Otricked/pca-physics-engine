@@ -40,7 +40,16 @@ int CheckCollisonCircleCircle(Circle a, Circle b) {
 
 //int CheckCollisionCircleCircle(Circle a, Circle b);
 void PreformCollisionCircleCircle(Circle* a, Circle* b) {
-    if (CheckCollisonCircleCircle(a, b)) {
-        MoveCircle(0, 0, a); // 0, 0 needs to be changed
+    float diffX = a->position.x - b->position.x;
+    float diffY = a->position.y - b->position.y;
+    float distanceSquared = (diffX * diffX) + (diffY * diffY);
+    float radiiSum = a->radius + b->radius;
+    if (distanceSquared < (radiiSum * radiiSum) && distanceSquared > 0) {
+        float distance = sqrtf(distanceSquared);
+        float overlap = (radiiSum - distance);
+        float nx = diffX / distance;
+        float ny = diffY / distance;
+        MoveCircle(nx * overlap * 0.5f, ny * overlap * 0.5f, a);
+        MoveCircle(-nx * overlap * 0.5f, -ny * overlap * 0.5f, b);
     }
 }
