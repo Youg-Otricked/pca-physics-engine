@@ -29,3 +29,14 @@ void RotateCircle(float deg, Circle* cir) { // this changes the rotation field
     if (cir->rotation >= 360) cir->rotation -= 360;
     if (cir->rotation < 0) cir->rotation += 360;
 }
+
+int CheckCollisonCircleCircle(Circle a, Circle b) {
+    diffX = a.position.x - b.position.x;
+    diffY = a.position.y - b.position.y;
+    distanceSquared = (diffX * diffX) + (diffY * diffY);
+    radiiSum = c1.r + c2.r;
+    return distanceSquared <= (radiiSum * radiiSum);
+}
+
+//int CheckCollisionCircleCircle(Circle a, Circle b);
+//void PreformCollisionCircleCircle(Circle* a, Circle* b);
