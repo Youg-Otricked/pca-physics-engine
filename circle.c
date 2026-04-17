@@ -24,7 +24,7 @@ void MoveCircle(float x, float y, Circle* cir) {
     cir->position.x += x;
     cir->position.y += y;
 }
-void RotateCircle(float deg, Circle* cir) {
+void RotateCircle(float deg, Circle* cir) { // this changes the rotation field
     cir->rotation += deg;
     if (cir->rotation >= 360) cir->rotation -= 360;
     if (cir->rotation < 0) cir->rotation += 360;
