@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/game.dir/link.d CMakeFiles/game.dir/main.c.o -o game  -lraylib

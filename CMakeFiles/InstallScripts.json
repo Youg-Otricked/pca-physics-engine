@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/lucar/physics/cmake_install.cmake",
+		"/home/lucar/physics/raylib/cmake_install.cmake",
+		"/home/lucar/physics/raylib/raylib/cmake_install.cmake",
+		"/home/lucar/physics/raylib/raylib/external/glfw/cmake_install.cmake",
+		"/home/lucar/physics/raylib/raylib/external/glfw/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

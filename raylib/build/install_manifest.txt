@@ -1,0 +1,11 @@
+/usr/local/lib/libraylib.a
+/usr/local/include/raylib.h
+/usr/local/include/rcamera.h
+/usr/local/include/rlgl.h
+/usr/local/include/raymath.h
+/usr/local/lib/pkgconfig/raylib.pc
+/usr/local/lib/cmake/raylib/raylib-config-version.cmake
+/usr/local/lib/cmake/raylib/raylib-config-version.cmake
+/usr/local/lib/cmake/raylib/raylib-config.cmake
+/usr/local/lib/cmake/raylib/raylib-targets.cmake
+/usr/local/lib/cmake/raylib/raylib-targets-noconfig.cmake
