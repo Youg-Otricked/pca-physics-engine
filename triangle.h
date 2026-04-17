@@ -13,3 +13,4 @@ Triangle CreateTriangle(float ax, float ay, float bx, float by, float cx, float 
 void RenderTriangle(Triangle t);
 void MoveTriangle(float x, float y, Triangle* t);
 void RotateTriangle(float deg, Triangle* rec);
+int CheckCollisionTriangleTriangle(Triangle a, Triangle b);
