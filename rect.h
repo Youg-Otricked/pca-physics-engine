@@ -13,3 +13,4 @@ Rect CreateRect(float x, float y, float width, float height);
 void RenderRect(Rect r);
 void MoveRect(float x, float y, Rect* rec);
 void RotateRect(float deg, Rect* rec);
+int CheckCollisionRectRect(Rectangle a, Rectangle b);
