@@ -31,10 +31,10 @@ void RotateCircle(float deg, Circle* cir) { // this changes the rotation field
 }
 
 int CheckCollisonCircleCircle(Circle a, Circle b) {
-    diffX = a.position.x - b.position.x;
-    diffY = a.position.y - b.position.y;
-    distanceSquared = (diffX * diffX) + (diffY * diffY);
-    radiiSum = c1.r + c2.r;
+    float diffX = a.position.x - b.position.x;
+    float diffY = a.position.y - b.position.y;
+    float distanceSquared = (diffX * diffX) + (diffY * diffY);
+    float radiiSum = c1.r + c2.r;
     return distanceSquared <= (radiiSum * radiiSum);
 }
 
