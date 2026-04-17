@@ -34,7 +34,7 @@ int CheckCollisonCircleCircle(Circle a, Circle b) {
     float diffX = a.position.x - b.position.x;
     float diffY = a.position.y - b.position.y;
     float distanceSquared = (diffX * diffX) + (diffY * diffY);
-    float radiiSum = c1.r + c2.r;
+    float radiiSum = a.radius + a.radius;
     return distanceSquared <= (radiiSum * radiiSum);
 }
 
