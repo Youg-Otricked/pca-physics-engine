@@ -39,4 +39,8 @@ int CheckCollisonCircleCircle(Circle a, Circle b) {
 }
 
 //int CheckCollisionCircleCircle(Circle a, Circle b);
-//void PreformCollisionCircleCircle(Circle* a, Circle* b);
+void PreformCollisionCircleCircle(Circle* a, Circle* b) {
+    if (CheckCollisonCircleCircle(a, b)) {
+        MoveCircle(0, 0, a); // 0, 0 needs to be changed
+    }
+}
