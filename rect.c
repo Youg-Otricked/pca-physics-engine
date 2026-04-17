@@ -31,5 +31,7 @@ int CheckCollisionRectRect(Rectangle a, Rectangle b) {
             a.y < b.y + b.height &&
             a.y + a.height > b.y);
 }
-if CheckCollisionRectRect(Rectangle a, Rectangle b) == 1 {
-    
+void PreformCollisionRectRect(Rectangle a, Rectangle b) {
+    if CheckCollisionRectRect(Rectangle a, Rectangle b) == 1 {
+    }
+}
