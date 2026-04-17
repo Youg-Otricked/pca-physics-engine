@@ -25,3 +25,11 @@ void RotateRect(float deg, Rect* rec) {
     if (rec->rotation >= 360) rec->rotation -= 360;
     if (rec->rotation < 0) rec->rotation += 360;
 }
+int CheckCollisionRectRect(Rectangle a, Rectangle b) {
+    return (a.x < b.x + b.width &&
+            a.x + a.width > b.x &&
+            a.y < b.y + b.height &&
+            a.y + a.height > b.y);
+}
+if CheckCollisionRectRect(Rectangle a, Rectangle b) == 1 {
+    
