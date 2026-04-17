@@ -38,3 +38,6 @@ void RotateTriangle(float deg, Triangle* t) {
     if (t->rotation >= 360) t->rotation -= 360;
     if (t->rotation < 0) t->rotation += 360;
 }
+int CheckCollisionTriangleTriangle(Triangle a, Triangle b) {
+    
+}
