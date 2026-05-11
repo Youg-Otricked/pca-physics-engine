@@ -32,6 +32,6 @@ int CheckCollisionRectRect(Rectangle a, Rectangle b) {
             a.y + a.height > b.y);
 }
 void PreformCollisionRectRect(Rectangle a, Rectangle b) {
-    if CheckCollisionRectRect(Rectangle a, Rectangle b) == 1 {
+    if (CheckCollisionRectRect(Rectangle a, Rectangle b) == 1 {
     }
 }
